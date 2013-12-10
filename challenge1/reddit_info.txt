@@ -1,0 +1,4 @@
+List of reddit users. Contains name, age, and username.
+
+Jalen          19   ruler_of_chaos 
+Example        24   user_sample 

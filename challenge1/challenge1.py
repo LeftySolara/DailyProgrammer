@@ -24,13 +24,4 @@ def show(name,age,username):
     print("You are {} years old".format(age))
     print("Your username is {}".format(username))
 
-def read_file():
-    with open("reddit_info.txt","r") as x:
-       for line in x:
-           print(line)
-
-def main():
-    get_info()
-    read_file()
-
-main()
+get_info()
