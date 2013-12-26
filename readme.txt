@@ -11,3 +11,7 @@ Challenge 2: pythagorean calculator
 Challenge 3: caesar cipher
 
 Challenge 4: password generator
+
+Challenge 5: password-protected app
+
+Challenge 6: pi calculator
