@@ -15,3 +15,5 @@ Challenge 4: password generator
 Challenge 5: password-protected app
 
 Challenge 6: pi calculator
+
+Challenge 7: morse code translator
