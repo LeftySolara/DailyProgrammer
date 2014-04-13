@@ -19,3 +19,7 @@ Challenge 6: pi calculator
 Challenge 7: morse code translator
 
 Challenge 8: 99 bottles of beer
+
+Challenge 9: input sort
+
+Challenge 149: disemvoweler
