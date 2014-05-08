@@ -1,3 +1,6 @@
+// Blackjack Simulator
+// finds percentage of natural blackjacks delt
+
 #include "deck.h"
 #include "card.h"
 #include <vector>
