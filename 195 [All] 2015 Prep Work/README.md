@@ -20,14 +20,3 @@ An example will be shown below that I use. But some basic ideas
 * Output to a file
 
 Do not limit yourself to these. Look at your previous code and find the pieces of code you repeat a lot and develop your own library for handling that part of your challenges. Having this for your use will make solutions easier to develop as you already have that code done.
-
-#Example:
-
-I tend to do a lot of work in C/objective C -- so I have this code I use a lot for getting input from the user and parsing it. It can be further developed and added on by me which I will.
-
-(https://github.com/coderd00d/standard-objects)
-
-#Solutions:
-
-Can be your code/link to your github/posting of it -- Also can just be ideas of tools you or others can develop.
-
