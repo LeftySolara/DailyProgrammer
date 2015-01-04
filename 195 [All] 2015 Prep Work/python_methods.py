@@ -3,18 +3,13 @@
 
 # This code is not meant to be imported. It is only here for reference and copy/paste jobs.
 
-# Methods to write:
-#   - find permutations
-#   - strip punctuation from string
-#   - determine if a number is prime
-#   - determine if input is a pallendrome
-#   - swap data in variables
-
 IN_FILE  = "Latin-Lipsum.txt"
 OUT_FILE = "output.txt"
 DATA = ["This is the first line.\n", "This is the second line.\n", "This is the third line.\n"]
 
 import random
+import string
+import itertools
 
 class InputOutput():
     """Code for  dealing with user and file i/o."""
@@ -40,14 +35,30 @@ class InputOutput():
 class StringManip():
     """Code for dealing with and manipulation strings."""
 
-    def reverse_string(self, string):
-        string = string[::-1]
-        return string
+    def reverse_string(self, usr_str):
+        usr_str = usr_str[::-1]
+        return usr_str
 
-    def convert_case(self, string):
-        string = string.lower()
-        string = string.upper()
-        return string
+    def convert_case(self, usr_str):
+        usr_str = usr_str.lower()
+        usr_str = usr_str.upper()
+        return usr_str
+
+    def remove_punctuation(self, usr_str):
+        exclude = set(string.punctuation)
+        return ''.join(ch for ch in usr_str if ch not in exclude)
+
+    def permute(self, in_string = "hello"):
+        """Creates and returns a list of permutations of the input string."""
+        if len(in_string) == 1:
+            return in_string
+    
+        perms = []
+        for i in range(len(in_string)):
+            part = in_string[:i] + in_string[i+1:]
+            for perm in self.permute(part):
+                perms.append(in_string[i:i+1] + perm)
+        return perms
 
 
 class NumberMethods():
@@ -60,6 +71,16 @@ class NumberMethods():
         number = int(str(number)[::-1])
         return number
 
+    def is_prime(self, num):
+        """Brute-force method"""
+        if num in [0,1,2,3]:
+            return true
+        for i in range(3, num, 2):
+            if num % i == 0:
+                return False
+        return True
+
+
 class Algorithms():
     """General algorithms"""
 
@@ -69,6 +90,7 @@ class Algorithms():
     def choose_random_value(self, data):
         """Choose a random value from a container"""
         return random.choice(data)
+
 
 def main():
     ioTests = InputOutput()
@@ -81,9 +103,12 @@ def main():
 
     assert stringTests.reverse_string("Hello") == "olleH"
     assert stringTests.convert_case("Hello") == "HELLO"
+    assert stringTests.remove_punctuation("String. With. Punctuation.") == "String With Punctuation"
 
     assert 1 <= numTests.generate_random_number() <= 100
     assert numTests.reverse_number(123456789) == 987654321
+    assert numTests.is_prime(17) == True
+    assert numTests.is_prime(186) == False
 
     assert algorithmTests.is_palendrome("World") == False
     assert algorithmTests.is_palendrome("12321") == True
