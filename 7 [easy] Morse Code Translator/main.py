@@ -1,6 +1,5 @@
-# r/dailyprogrammer challenge #7: morse code translator
-# Prompts for filename and translates from that file
-# Assumes slashes between words
+# [2/15/2012] Challenge #7 [easy]
+# http://www.reddit.com/r/dailyprogrammer/comments/pr2xr/2152012_challenge_7_easy/
 
 code = {"A": ".-", "B": "-...", "C": "-.-.", "D": "-..", "E": ".", "F": "..-.", "G": "--.", "H": "....", "I": "..", "J": ".---", "K": "-.-", "L": ".-..", "M": "--", "N": "-.", "O": "---", "P": ".--.", "Q": "--.-", "R": ".-.", "S": "...", "T": "-", "U": "..-", "V": "...-", "W": ".--", "X": "-..-", "Y": "-.--", "Z": "--..", "1": ".----", "2": "..---", "3": "...--", "4": "....-", "5": ".....", "6": "-....", "7": "--...", "8": "---..", "9": "----.", "0": "-----"}
 

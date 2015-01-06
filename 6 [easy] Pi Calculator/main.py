@@ -1,5 +1,5 @@
-# r/dailyprogrammer challenge #6: pi calculator
-# calculates pi to the nth digit using the Baily-Borwein-Plouffe formula
+# [2/14/2012] Challenge #6 [easy]
+# http://www.reddit.com/r/dailyprogrammer/comments/pp53w/2142012_challenge_6_easy/
 
 from decimal import getcontext
 

@@ -1,5 +1,5 @@
-""" Pythagorean calculator. Creates an object of class Triangle and solves
-    for the third side. """
+# [7/2/2012] Challenge #71 [easy]
+# http://www.reddit.com/r/dailyprogrammer/comments/vx3bk/722012_challenge_71_easy/
 
 import math
 
@@ -34,4 +34,5 @@ def main():
     triangle.pythagorean()
     print(triangle)
 
-main()
+if __name__ == '__main__':
+    main()

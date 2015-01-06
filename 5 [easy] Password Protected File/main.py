@@ -1,5 +1,5 @@
-# r/dailyprogrammer challenge #5: password-protected script
-# reads login info from text file and unlocks when valid
+# [2/12/2012] Challenge #5 [easy]
+# http://www.reddit.com/r/dailyprogrammer/comments/pnhyn/2122012_challenge_5_easy/
 
 from sys import argv
 import getpass

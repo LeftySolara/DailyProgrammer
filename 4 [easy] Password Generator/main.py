@@ -1,6 +1,5 @@
-# r/dailyprogrammer challenge #4 - Random password generator
-# Creates specified number of passwords of specified length
-# Appends passwords to file "passwords.txt"
+# [2/12/2012] Challenge #4 [easy]
+# http://www.reddit.com/r/dailyprogrammer/comments/pm6oj/2122012_challenge_4_easy/
 
 import string
 import random

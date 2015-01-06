@@ -1,9 +1,7 @@
-""" Read in dates, output in format yyyy-mm-dd
-Years range from 1950-2049
+# [2014-11-10] Challenge #188 [Easy] yyyy-mm-dd
+# http://www.reddit.com/r/dailyprogrammer/comments/2lvgz6/20141110_challenge_188_easy_yyyymmdd/
 
-Not the most elegant solution, but I wanted to play 
-with regex and enums
-"""
+# Not the most elegant solution, but I wanted to play with regex and enums
 
 from enum import Enum
 import sys

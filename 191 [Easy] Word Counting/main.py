@@ -1,8 +1,5 @@
-"""Given a text file, count how many occurences of each word are present in that text file.
-
-This is by no means an elegant solution, but it does work. I'm hoping to
-come back and clean it up a bit at some point (along with most of the code in this repo.
-"""
+# [2014-12-1] Challenge #191 [Easy] Word Counting
+# http://www.reddit.com/r/dailyprogrammer/comments/2nynip/2014121_challenge_191_easy_word_counting/
 
 import string
 

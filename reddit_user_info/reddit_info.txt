@@ -1,4 +1,0 @@
-List of reddit users. Contains name, age, and username.
- 
-Example        24   user_example 
-Sample         20   sample_user
