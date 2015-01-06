@@ -1,5 +1,8 @@
 [[2015-01-02] Challenge #195 [All] 2015 Prep Work](http://www.reddit.com/r/dailyprogrammer/comments/2r4wal/20150102_challenge_195_all_2015_prep_work/)
 
+##Note
+The "tool" I made for this challenge is the entirety of my [library repo](https://github.com/leftysolara/Library). The code in here is just what I started with during the brainstorming process.
+
 #2015 Prep Work:
 
 As we enter a new year it is a good time to get organized and be ready. One thing I have noticed as you use this subreddit and finish challenges you repeat lots of code in solutions. This is true in the area of reading in data.
