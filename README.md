@@ -1,0 +1,1 @@
+#My solutions to the challenges over at [r/DailyProgrammer](http://reddit.com/r/dailyprogrammer)
