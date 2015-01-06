@@ -43,8 +43,8 @@ void deal_hands(vector<Deck> &decks, vector<pair<Card,Card>> &hands, double &cou
             rank1 = hand.first.rank();
             rank2 = hand.second.rank();
     
-            if (rank1 > 10) { rank1 = 10; }    // Jack, Queen, King
-            else if (rank1 == 1) { rank1 = 11; }    // Ace
+            if (rank1 > 10) { rank1 = 10; }
+            else if (rank1 == 1) { rank1 = 11; }
 
             if (rank2 > 10) { rank2 = 10; }
             else if (rank2 == 1) { rank2 = 11; }
