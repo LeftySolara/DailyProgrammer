@@ -1,9 +1,9 @@
-# r/dailyprogrammer challenge #3: Caesar Cipher
-# User inputs string and the script encrypts it
+# Challenge #3 [easy]
+# http://www.reddit.com/r/dailyprogrammer/comments/pkw2m/2112012_challenge_3_easy/
 
 import string
 letters = string.ascii_letters
-shift = 6  # number of letters to shift
+shift = 6
 numbers = (0,1,2,3,4,5,6,7,8,9)
 
 def encode(msg,letters,shift,numbers,new_str):
