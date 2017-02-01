@@ -5,6 +5,8 @@
  * Have the program tell the info back in the form:
  *
  * "Your name is [name], you are [age] years old, and your username is [username]."
+ *
+ * For extra credit, have the program log this information to a file to be accessed later.
  */
 
 #include <stdio.h>
@@ -12,6 +14,12 @@
 #include <stdlib.h>
 
 #define MAXLINE 256  /* maximum length of an input line */
+
+enum error_codes
+{
+    E_INVALID_AGE = 1,
+    E_FILE_IO_ERROR = 2
+};
 
 int main(int argc, char *argv)
 {
@@ -26,7 +34,7 @@ int main(int argc, char *argv)
 
     if ((age = atoi(agestr)) == 0 || age < 0) {   /* not an integer, or is negative */
         fprintf(stderr, "error: invalid value for age\n");
-        return 3;
+        return E_INVALID_AGE;
     }
 
     printf("What is your reddit username?\n");
@@ -37,6 +45,15 @@ int main(int argc, char *argv)
     username[strlen(username)-1] = '\0';
 
     printf("Your name is %s, you are %d years old, and your username is %s.\n", name, age, username);
+
+    /* write info to a file */
+    FILE *fp = fopen("userinfo.txt", "w");
+    if (fp == NULL) {
+        fprintf(stderr, "Error opening file\n");
+        exit(E_FILE_IO_ERROR);
+    }
+    fprintf(fp, "Name: %s\nAge: %d\nUsername: %s", name, age, username);
+    fclose(fp);
 
     return 0;
 }
